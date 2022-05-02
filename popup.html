@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    </head>
+    <body>
+        <section class="section">
+            <h4 class="title is-5">Trends Spam Remover (for Twitter)</h4>
+
+            <div class="field">
+                <label>Enable: </label>
+                <select id="tsr_enabled_select" class="select">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Sensitivity: </label>
+                <select id="tsr_sensitivity_select" class="select">
+                    <option value="standard">Standard</option>
+                    <option value="aggressive">Aggressive</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Debug: </label>
+                <select id="tsr_debug_select" class="select">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </section>
+
+        <script src="utils.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>

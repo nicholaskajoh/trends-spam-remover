@@ -1,0 +1,19 @@
+{
+    "name": "Trends Spam Remover",
+    "description": "Remove tweets spamming trends/hashtags for a cleaner Twitter experience!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/search*"],
+            "js": ["utils.js", "content-script.js"]
+        }
+    ]
+}
